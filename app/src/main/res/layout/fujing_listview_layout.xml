@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/NetworkImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/TextView_biaoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/NetworkImageView"
+        android:singleLine="true"
+        android:text="加载中..."
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/TextView_youhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView_biaoti"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/NetworkImageView"
+        android:singleLine="true"
+        android:text="加载中..."
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/TextView_juli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/NetworkImageView"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/info_map"
+        android:text="加载中..."
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/TextView_neirong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/NetworkImageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/TextView_juli"
+        android:layout_toRightOf="@id/NetworkImageView"
+        android:singleLine="true"
+        android:text="加载中..."
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/ImageView_quan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:id="@+id/ImageView_ka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp" />
+
+        <ImageView
+            android:id="@+id/ImageView_tuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+</RelativeLayout>
